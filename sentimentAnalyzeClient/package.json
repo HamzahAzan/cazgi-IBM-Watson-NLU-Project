@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf ../sentimentAnalyzeServer/client &&mv build ../sentimentAnalyzeServer/client",
+    "build": "react-scripts build && rimraf ../sentimentAnalyzeServer/client &&move build ../sentimentAnalyzeServer/client",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.5",
+    "rimraf": "^2.6.3"
   }
 }
